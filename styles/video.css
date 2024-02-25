@@ -1,5 +1,6 @@
 .thumbnail {
     width: 100%;
+    border-radius: 5px;
 }
 
 .video-title {
@@ -36,7 +37,7 @@
 }
 
 .video-time {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.77);
     color: white;
     position: absolute;
     bottom: 10px;
@@ -55,3 +56,20 @@
     row-gap: 40px;
 }
 
+@media (max-width: 750px ) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px ) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
